@@ -27,6 +27,4 @@ function saklar(action, lamp) {
             lampu3.src = "assets/images/off.gif";
         }
     }
-
-    return lampu1;
 }
