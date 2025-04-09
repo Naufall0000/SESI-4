@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ON/OFF LAMPU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 </head>
+<style>
+    .button-error {
+            background: rgb(202, 60, 60);
+            /* this is a maroon */
+        }
+</style>
 <body>
-
-    <div>
+    <div class="pure-g">
         <!--LAMPU 1-->
-        <div>
+        <div class="pure-u-1 pure-u-md-1-3">
             <img src="assets/images/off.gif" alt="" id="lampu1">
-            <button onclick="saklar('on')">ON LAMP</button>
-            <button onclick="saklar('off')">OFF LAMP</button>
+            <button onclick="saklar('on')" class="pure-button pure-button-primary">ON LAMP</button>
+            <button onclick="saklar('off')" class="button-error pure-button">OFF LAMP</button>
         </div>
 
         <!--LAMPU 2-->
-        <div>
+        <div class="pure-u-1 pure-u-md-1-3">
             <img src="assets/images/off.gif" alt="" id="lampu2">
-            <button onclick="saklar('on')">ON LAMP</button>
-            <button onclick="saklar('off')">OFF LAMP</button>
+            <button onclick="saklar('on')" class="pure-button pure-button-primary">ON LAMP</button>
+            <button onclick="saklar('off')" class="button-error pure-button">OFF LAMP</button>
         </div>
 
         <!--LAMPU 3-->
-        <div>
+        <div class="pure-u-1 pure-u-md-1-3">
             <img src="assets/images/off.gif" alt="" id="lampu3">
-            <button onclick="saklar('on')">ON LAMP</button>
-            <button onclick="saklar('off')">OFF LAMP</button>
+            <button onclick="saklar('on')" class="pure-button pure-button-primary">ON LAMP</button>
+            <button onclick="saklar('off')" class="button-error pure-button">OFF LAMP</button>
         </div>
     </div>
+
+
     <!--ini adalah script-->
     <script src="saklar.js" type="application/javascript"></script>
 </body>
